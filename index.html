@@ -14,32 +14,38 @@
     </div>
     <div class="container">
       <form class="input-group userInfo">
-        <div class="userForm">
+        <div class="form-group">
           <p class="info">Name:</p>
-          <input type="text" class="form-control" id="userName"></input>
+          <input id="userName" type="text" class="form-control" ></input>
         </div>
-        <div class="userForm">
+        <div class="form-group">
           <p class="info">What is it?</p>
-          <input type="text" class="form-control"></input>
+          <input id="userDesc" type="text" class="form-control"></input>
         </div>
-        <div class="userForm">
-          <p class="info">Date</p>
-          <input type="text" class="form-control"></input>
+        <div class="form-group">
+          <label for="appt">Date of appointment:</label>
+          <input id="userDate" class="form-control" type="date">
         </div>
-        <div class="userForm">
+        <div class="form-group">
           <div class="row">
             <div class="col-sm-6">
               <p class="info">Time start</p>
-              <input type="text" class="form-control"></input>
+              <input id="userTimeStart" type="text" class="form-control"></input>
             </div>
             <div class="col-sm-6">
               <p class="info time-end-right">Time end</p>
-              <input type="text" class="form-control time-end-right"></input>
+              <input id="userTimeEnd" type="text" class="form-control time-end-right"></input>
             </div>
           </div>
         </div>
         <button type="submit" class="userButton">Submit</button>
       </form>
+      <div class="display">
+        <p>Name: <span id="name"></span></p>
+        <p>Description: <span id="desc"></span></p>
+        <p>Date of appointment: <span id="date"></span></p>
+        <p>Time of appointment: Starts at <span id="time-start"></span> ends at <span id="time-end"></span> </p>
+      </div>
     </div>
   </body>
 </html>

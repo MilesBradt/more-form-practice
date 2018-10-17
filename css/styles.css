@@ -1,8 +1,13 @@
-.userForm {
+.form-group {
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
 .userButton {
   margin-top: 15px;
+}
+
+.display {
+  display: none;
+  margin-top: 50px;
 }
