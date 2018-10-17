@@ -7,13 +7,14 @@ $(document).ready(function() {
     var userTimeEnd = $("input#userTimeEnd").val();
 
 
-
+    $(".added").fadeIn(600);
+    $(".added").fadeOut(1);
+    $(".display").fadeIn(600);
     $("#name").text(userName);
     $("#desc").text(userDescription);
     $("#date").text(userDate);
     $("#time-start").text(userTimeStart);
     $("#time-end").text(userTimeEnd);
-    $(".display").show();
     event.preventDefault();
   });
 });

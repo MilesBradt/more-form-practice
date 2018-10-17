@@ -7,6 +7,10 @@
   margin-top: 15px;
 }
 
+.added {
+  display: none;
+}
+
 .display {
   display: none;
   margin-top: 50px;
